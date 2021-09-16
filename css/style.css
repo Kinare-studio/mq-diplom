@@ -19,7 +19,7 @@
   }
   
   .header {
-    background-image: url(images/banner-bg.jpg);
+    background-image: url(banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -295,7 +295,7 @@
   .button-search {
     height: 48px;
     width: 48px;
-    background-image: url(svg/search.svg);
+    background-image: url(search.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center center;
