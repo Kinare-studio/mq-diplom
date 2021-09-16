@@ -6,20 +6,20 @@
   
   @font-face {
     font-family: OpenSans-Regular;
-    src: url(fonts/OpenSans-Regular.woff);
+    src: url(fonts/OpenSans-Regular.woff2);
     font-weight: 400;
     font-style: normal;
   }
   
   @font-face {
     font-family: OpenSans-Bold;
-    src: url(fonts/OpenSans-Bold.woff);
+    src: url(fonts/OpenSans-Bold.woff2);
     font-weight: 700;
     font-style: normal;
   }
   
   .header {
-    background-image: url(banner-bg.jpg);
+    background-image: url(images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -92,6 +92,28 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .trends {
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trend:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    opacity: 0.6;
+    background-color: #000000;
+    z-index: -1;
+  }
+
   
   .main-content {
     display: flex;
@@ -295,7 +317,7 @@
   .button-search {
     height: 48px;
     width: 48px;
-    background-image: url(search.svg);
+    background-image: url(svg/search.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center center;
