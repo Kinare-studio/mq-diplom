@@ -96,8 +96,7 @@
   .trends {
     display: block;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 65px 0;
   }
 
   .trends-tittle {
@@ -124,7 +123,6 @@
   }
 
   .trends-posts {
-    border: red solid 2px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -132,8 +130,8 @@
 
   .trend {
     position: relative;
-    border: red solid 2px;
-    display: block;
+    display: flex;
+    align-items: center;
     max-width: 405px;
     width: 25%;
     margin-right: 4px;
@@ -154,7 +152,7 @@
   
     opacity: 0.6;
     background-color: #000000;
-    z-index: 1;
+    z-index: -1;
   }
 
   .trend-content {
@@ -162,15 +160,14 @@
     padding: 20px;
     max-width: 365px;
     min-width: 90%;
-    margin-top: -100px;
-    z-index: 2;
+    margin-top: -30%;
+    z-index: -2;
   }
 
   .trend-tittle {
     color: white;
     text-decoration: none;
-    border: blue solid 2px;
-    margin-top: -90px;
+    margin-top: -25%;
   }
   
   .main-content {
