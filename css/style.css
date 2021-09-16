@@ -101,27 +101,20 @@
   }
 
   .trends-tittle {
-
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+    font-family: OpenSans-Bold;
   }
 
   .trends-posts {
+    border: red solid 2px;
     display: flex;
     flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .trends-posts:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  
-    opacity: 0.6;
-    background-color: #000000;
-    z-index: -1;
   }
 
   
