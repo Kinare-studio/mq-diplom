@@ -94,14 +94,24 @@
   }
 
   .trends {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .trend:after {
+  .trends-tittle {
+
+  }
+
+  .trends-posts {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trends-posts:after {
     content: "";
     position: absolute;
     top: 0;
