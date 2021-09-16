@@ -131,12 +131,13 @@
   }
 
   .trend {
+    position: relative;
     border: red solid 2px;
     display: block;
     max-width: 405px;
     width: 25%;
     margin-right: 4px;
-    z-index: -1;
+    z-index: 0;
   }
 
   .trend:last-child {
