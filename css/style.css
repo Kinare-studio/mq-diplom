@@ -103,10 +103,11 @@
   .trends-tittle {
     color: black;
     display: block;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1;
+    font-size: 20px;
+    line-height: normal;
     font-family: OpenSans-Bold;
   }
 
@@ -132,7 +133,14 @@
   .trend {
     border: red solid 2px;
     display: block;
+    max-width: 405px;
     width: 25%;
+    margin-right: 4px;
+    z-index: -1;
+  }
+
+  .trend:last-child {
+    margin-right: 0;
   }
 
   .trend-img:after {
@@ -145,20 +153,23 @@
   
     opacity: 0.6;
     background-color: #000000;
-    z-index: -1;
+    z-index: 1;
   }
 
   .trend-content {
-    border: red solid 2px;
-    padding: 10px;
-    margin-top: -20px;
+    border: blueviolet solid 2px;
+    padding: 20px;
+    max-width: 365px;
+    min-width: 90%;
+    margin-top: -100px;
+    z-index: 2;
   }
 
   .trend-tittle {
     color: white;
     text-decoration: none;
-    border: red solid 2px;
-    margin-top: -10px;
+    border: blue solid 2px;
+    margin-top: -90px;
   }
   
   .main-content {
