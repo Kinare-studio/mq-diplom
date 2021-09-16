@@ -101,6 +101,7 @@
   }
 
   .trends-tittle {
+    color: black;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -109,14 +110,56 @@
     font-family: OpenSans-Bold;
   }
 
+  .trends-tittle::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 66px;
+    background-color: #e1d9bd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+
   .trends-posts {
     border: red solid 2px;
     display: flex;
     flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
   }
 
+  .trend {
+    border: red solid 2px;
+    display: block;
+    width: 25%;
+  }
+
+  .trend-img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    opacity: 0.6;
+    background-color: #000000;
+    z-index: -1;
+  }
+
+  .trend-content {
+    border: red solid 2px;
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .trend-tittle {
+    color: white;
+    text-decoration: none;
+    border: red solid 2px;
+    margin-top: -10px;
+  }
   
   .main-content {
     display: flex;
