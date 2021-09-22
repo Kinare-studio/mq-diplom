@@ -28,7 +28,7 @@
     z-index: 0;
   }
   
-  .header:after {
+  .header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -102,8 +102,7 @@
   .trends-tittle {
     color: black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     text-transform: uppercase;
     font-size: 20px;
     line-height: normal;
@@ -128,21 +127,46 @@
     justify-content: space-between;
   }
 
-  .trend {
+  .trend1 {
+    background-image: url(../images/trend1.jpg);
+  }
+
+  .trend2 {
+    background-image: url(../images/trend2.jpg);
+  }
+
+  .trend3 {
+    background-image: url(../images/trend3.jpg);
+  }
+
+  .trend14 {
+    background-image: url(../images/trend4.jpg);
+  }
+
+  .trends-posts:last-child {
+    padding-right: 0;
+  }
+
+  .trend1,
+  .trend2,
+  .trend3,
+  .trend4 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
     position: relative;
-    display: flex;
-    align-items: center;
-    max-width: 405px;
-    width: 25%;
-    margin-right: 4px;
     z-index: 0;
+    display: block;
+    text-align: center;
+    width: 25%;
+    padding-right: 4px;
   }
 
-  .trend:last-child {
-    margin-right: 0;
-  }
-
-  .trend-img:after {
+  .trend1::after,
+  .trend2::after,
+  .trend3::after,
+  .trend4::after {
     content: "";
     position: absolute;
     top: 0;
