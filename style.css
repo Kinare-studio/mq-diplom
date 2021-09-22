@@ -143,19 +143,19 @@
   }
   
   .trend1 {
-     background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/trend4.jpg");
+     background-image: url(../images/trend1.jpg);
   }
   
   .trend2 {
-     background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/trend4.jpg");
+     background-image: url(../images/trend2.jpg);
   }
   
   .trend3 {
-     background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/trend4.jpg");
+     background-image: url(../images/trend3.jpg);
   }
   
   .trend4 {
-     background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/trend4.jpg");
+     background-image: url(../images/trend4.jpg);
   }
   
   .trend::after {
