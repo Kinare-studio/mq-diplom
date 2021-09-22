@@ -6,20 +6,20 @@
   
   @font-face {
     font-family: OpenSans-Regular;
-    src: url(fonts/OpenSans-Regular.woff2);
+    src: url(../fonts/OpenSans-Regular.woff2);
     font-weight: 400;
     font-style: normal;
   }
   
   @font-face {
     font-family: OpenSans-Bold;
-    src: url(fonts/OpenSans-Bold.woff2);
+    src: url(../fonts/OpenSans-Regular.woff2);
     font-weight: 700;
     font-style: normal;
   }
   
   .header {
-    background-image: url(images/banner-bg.jpg);
+    background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -372,7 +372,7 @@
   .button-search {
     height: 48px;
     width: 48px;
-    background-image: url(svg/search.svg);
+    background-image: url(../svg/search.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center center;
@@ -502,7 +502,7 @@
   }
   
   .social-iconsocial-icon__twitter {
-    background-image: url(svg/004-twitter.svg);
+    background-image: url(../svg/004-twitter.svg);
     background-size: 23px;
     background-position: center center;
     display: block;
@@ -512,7 +512,7 @@
   }
   
   .social-iconsocial-icon__pinterest {
-    background-image: url(svg/001-pinterest.svg);
+    background-image: url(../svg/001-pinterest.svg);
     background-size: 23px;
     background-position: center center;
     display: block;
@@ -521,7 +521,7 @@
   }
   
   .social-iconsocial-icon__facebook {
-    background-image: url(svg/002-facebook-logo.svg);
+    background-image: url(../svg/002-facebook-logo.svg);
     background-size: 23px;
     margin: 0 30px;
     background-position: center center;
@@ -531,7 +531,7 @@
   }
   
   .social-iconsocial-icon__instagram {
-    background-image: url(svg/005-instagram.svg);
+    background-image: url(../svg/005-instagram.svg);
     background-size: 23px;
     background-position: center center;
     display: block;
@@ -540,7 +540,7 @@
   }
   
   .social-iconsocial-icon__tumblr {
-    background-image: url(svg/003-tumblr.svg);
+    background-image: url(../svg/003-tumblr.svg);
     background-size: 23px;
     margin: 0 30px;
     background-position: center center;
