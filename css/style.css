@@ -717,6 +717,7 @@ shop-price {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
+  display: none;
 }
 
 .popup {
@@ -774,6 +775,7 @@ shop-price {
   font-family: OpenSans-Regular;
   font-size: 13px;
   background-image: url(../svg/form-arrows.svg);
+  background-size: 13px;
   background-repeat: no-repeat;
   background-position: right 15px center;
 }
@@ -842,6 +844,11 @@ shop-price {
   height: 20px;
 
   position: absolute;
-  top: -30px;
+  top: -25px;
   right: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: black;
 }
+
