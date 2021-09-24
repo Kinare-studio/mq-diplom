@@ -845,15 +845,3 @@ shop-price {
   top: -30px;
   right: 0;
 }
-
-@media (max-width: 480px) {
-  .popup__close {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 481px) {
-  .popup__close {
-    font-size: 20px;
-  }
-}
