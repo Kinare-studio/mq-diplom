@@ -1011,7 +1011,7 @@
   .shop-posts {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .shop-item {
