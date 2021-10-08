@@ -18,10 +18,6 @@
   font-style: normal;
 }
 
-.body {
-  width: 100%;
-}
-
 .header {
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
@@ -1070,119 +1066,41 @@
   }
 
   .trends {
-    padding-top: 65px;
-    width: 100%;
+    padding-top: 45px;
   }
   
   .trends-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 1;
-    font-family: OpenSans-Bold;
-    color: black;
+    font-size: 16px;
   }
   
   .trends-title::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 66px;
-    background-color: #b59f5b;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   .trends-posts {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .trend {
-    display: flex;
-    align-items: flex-end;
-    width: 25%;
-    height: 315px;
-    margin-right: 4px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-color: #000000;
-    position: relative;
-    padding: 15px 20px;
+    width: 100%;
+    height: 230px;
+    margin-right: 0;
+    margin-bottom: 3px;
+    padding: 15px;
     z-index: 0;
   }
   
-  .trend:last-child {
-    margin-right: 0;
-  }
-  
-  .trend1 {
-    background-image: url(../images/trend1.jpg);
-  }
-  
-  .trend2 {
-    background-image: url(../images/trend2.jpg);
-  }
-  
-  .trend3 {
-    background-image: url(../images/trend3.jpg);
-  }
-  
-  .trend4 {
-    background-image: url(../images/trend4.jpg);
-  }
-  
-  .trend::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  
-    opacity: 0.6;
-    background-color: #000000;
-    z-index: -1;
-  }
-  
   .trend-content {
-    border: solid 3px #b59f5b;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 38px 35px 37px;
-  }
-  
-  .nav-trend-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 10px;
-  }
-  
-  .nav-trend-list-item {
-    display: inline-block;
-    font-family: OpenSans-Bold;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-right: 20px;
-  }
-  
-  
-  .nav-trend-link {
-    color: #b59f5b;
-    text-decoration: none;
+    padding: 30px 20px;
+    width: 100%;
   }
   
   .trend-title {
-    font-size: 20px;
+    border: solid 1px red;
+    font-size: 16px;
     line-height: 1.2;
-    font-family: OpenSans-Bold;
-    text-transform: uppercase;
     margin-top: 10px;
   }
   
