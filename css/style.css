@@ -575,6 +575,11 @@
   min-height: 410px;
 }
 
+.shop-item-picture {
+  width: 100%;
+  flex-grow: 0;
+}
+
 .shop-item-img {
   width: 100%;
   flex-grow: 0;
@@ -879,14 +884,6 @@
     background-image: url(../images/banner-bg-tablet.jpg);
   }
   
-  .banner {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 15px 125px;
-    text-align: center;
-  }
-  
   .logo {
     width: 160px;
   }
@@ -923,12 +920,188 @@
   
   .trends-posts {
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-grow: 1;
   }
   
   .trend {
     width: calc(50% - 2px);
+    height: 245px;
+    margin-bottom: 4px;
+  }
+  
+  .trend:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .trend-content {
+    padding: 30px;
+  }
+  
+  .trend-title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  
+  .main-content {
+    padding: 50px 0;
+    max-width: 700px;
+  }
+    
+  .last-posts-item {
+    flex-direction: column;
+    flex: auto;
+    max-width: 390px;
+    margin-bottom: 40px;
+  }
+
+  .last-posts-item::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #f3f7f6;
+  }
+  
+  .last-post-img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .last-post-content {
+    max-width: 100%;
+  }
+  
+  .last-post-title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  
+  .date-and-author {
+    margin: 30px 0;
+  }
+  
+  .shop {
+    padding: 0 35px;
+  }
+  
+  .shop-main-title {
+    font-size: 18px;
+  }
+  
+  .shop-main-title::after {
+    content: "";
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .shop-posts {
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .shop-item {
+    margin: 0 20px 50px;
+  }
+  
+  .shop-title-link {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  
+  .shop-text {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    padding: 20px 15px 40px;
+  }
+  
+  .popup-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+  }
+  
+  .banner {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 215px;
+    max-width: 100%;
+    max-height: 100vh;
+  
+  }
+  
+  .main-header {
+    border: solid 1px green;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    border: solid 1px red;
+    max-width: 270px;
+  }
+  
+  .menu_button {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu {
+    border: solid 2px red;
+    margin-bottom: 165px;
+    display: flex;
+    align-self: flex-end;
+  }
+  
+  .menu-list-item {
+    display: none;
+  }
+
+  
+  .welcome-title {
+    font-size: 26px;
+    line-height: 1.4;
+    max-width: 280px;
+  }
+
+  .trends {
+    padding-top: 50px;
+  }
+  
+  .trends-title {
+    font-size: 18px;
+  }
+  
+  .trends-title::after {
+    content: "";
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .trends-posts {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .trend {
+    width: 100%;
     height: 245px;
     margin-right: 4px;
     margin-bottom: 4px;
@@ -951,10 +1124,12 @@
   .main-content {
     justify-content: center;
     padding: 50px 35px;
+    flex-wrap: wrap;
   }
   
   .last-posts {
     flex-direction: column;
+    width: 100%;
   }
   
   .last-posts-item {
@@ -993,6 +1168,213 @@
     margin: 30px 0;
   }
   
+  .sidebar {
+    display: block;
+    width: 270px;
+  }
+  
+  .new-posts {
+    display: block;
+  }
+  
+  .new-posts-title,
+  .distribution-title,
+  .tegs-title,
+  .categories-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+    font-family: OpenSans-Bold;
+  }
+  
+  .new-posts-title::after,
+  .distribution-title::after,
+  .tegs-title::after,
+  .categories-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 66px;
+    background-color: #e1d9bd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+  
+  .new-posts-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  
+  .new-post-img {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .new-post-content {
+    display: block;
+    width: 183px;
+  }
+  
+  .new-post-date {
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+    line-height: 1;
+    display: block;
+    color: #888888;
+  }
+  
+  .new-post-title {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 5px;
+    font-family: OpenSans-Bold;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #0f0d0e;
+  }
+  
+  .new-post-title-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .search-form {
+    display: flex;
+    margin: 60px 0;
+  }
+  
+  .field-search {
+    display: flex;
+    height: 48px;
+    width: 222px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    background-color: #f4f7f6;
+  }
+  
+  .visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+  }
+  
+  .button-search {
+    height: 48px;
+    width: 48px;
+    background-image: url(../svg/search.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    border: none;
+    background-color: #b59f5b;
+  }
+  
+  .distribution {
+    display: block;
+  }
+  
+  .subscription {
+    display: block;
+    margin-bottom: 60px;
+  }
+  
+  .field-subscription {
+    display: block;
+    height: 48px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    border: none;
+    background-color: #f4f7f6;
+  }
+  
+  .button-subscription {
+    border: none;
+    height: 48px;
+    width: 100%;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #b59f5b;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .tegs {
+    display: block;
+    margin-bottom: 54px;
+  }
+  
+  .teg-lists {
+    display: inline-block;
+  }
+  
+  .teg-list-item {
+    display: inline-block;
+    line-height: 1;
+    border: solid 3px #eeeeee;
+    padding: 4px 12px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+  }
+  
+  .teg-link {
+    color: black;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: OpenSans-Bold;
+    font-size: 12px;
+  }
+  
+  .categories {
+    display: block;
+    margin-bottom: 60px;
+  }
+  
+  .categories-list {
+    display: block;
+  }
+  
+  .categories-lists {
+    display: block;
+  }
+  
+  .categories-list-item {
+    display: block;
+    margin-bottom: 12px;
+    border-bottom: solid 1px #eeeeee;
+    padding-bottom: 13px;
+  }
+  
+  .categories-link {
+    color: black;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+  }
+  
+  .number {
+    color: #b59f5b;
+    font-family: OpenSans-Bold;
+    font-size: 12px;
+    margin-left: 2px;
+    vertical-align: super;
+  }
+
   .shop {
     padding: 0 35px;
     margin-bottom: 20px;
@@ -1009,29 +1391,20 @@
   }
   
   .shop-posts {
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .shop-item {
-    margin: 0 35px 50px 20px;
-    width: calc(50%-55px);
-    min-height: 410px;
+    margin: 0 20px 50px;
   }
 
   .shop-item:nth-child(2n) {
     margin-right: 0 20px 50px 35px;
   }
   
-  .shop-item-img {
-    width: 100%;
-  }
-  
-  .shop-content {
-    width: 100%;
-  }
-
   .shop-title-link {
     font-size: 17px;
     line-height: 1.3;
@@ -1051,8 +1424,4 @@
   .popup-title {
     font-size: 18px;
   }
-}
-
-@media (max-width: 640px) {
-
 }
