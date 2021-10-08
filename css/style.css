@@ -1266,10 +1266,6 @@
   .social {
     margin-bottom: 45px;
   }
-
-  .popup-wrapper-hidden {
-    display: flex;
-  }
   
   .popup {
     max-width: 330px;
