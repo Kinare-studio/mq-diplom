@@ -26,6 +26,7 @@
   background-color: #000000;
   position: relative;
   z-index: 0;
+  width: 100%;
 }
 
 .header:after {
