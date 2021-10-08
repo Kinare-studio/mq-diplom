@@ -67,30 +67,30 @@
   display: flex;
 }
 
-.menu_button {
-  position: fixed;
-  top: 30px;
-  right: 15px;
-  background-color: transparent;
-  border: none;
-  display: none;
-}
-
 .menu_list {
   display: flex;
 }
 
 .menu-list-item {
+  display: inline-block;
   font-family: OpenSans-Regular;
   font-size: 13px;
   text-transform: uppercase;
-  display: inline-block;
   margin-left: 31px;
 }
 
 .menu-link {
   color: white;
   text-decoration: none;
+}
+
+.menu_button {
+  position: fixed;
+  top: 53px;
+  right: 35px;
+  background-color: transparent;
+  border: none;
+  display: none;
 }
 
 .welcome-title {
@@ -201,7 +201,8 @@
 }
 
 .nav-trend-list-item {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   font-family: OpenSans-Bold;
   line-height: 1;
   text-transform: uppercase;
@@ -255,7 +256,7 @@
 
 .last-post-img {
   display: block;
-  max-width: 380px;
+  width: 380px;
   height: 300px;
   margin-right: 34px;
 }
@@ -413,13 +414,13 @@
 .field-search {
   display: flex;
   height: 48px;
-  width: 222px;
   border: none;
   padding-left: 20px;
   padding-right: 20px;
   font-family: OpenSans-Regular;
   font-size: 13px;
   background-color: #f4f7f6;
+  width: 222px;
 }
 
 .visually-hidden {
@@ -480,7 +481,6 @@
 .teg-lists {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
 }
 
 .teg-list-item {
@@ -577,7 +577,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 23px;
-  max-width: 300px;
+  width: 300px;
   min-height: 410px;
 }
 
@@ -595,9 +595,8 @@
   flex-grow: 1;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 10px;
   outline: solid 3px #b59f5b;
-  outline-offset: 23px;
+  outline-offset: 20px;
 }
 
 .shop-title-link {
@@ -894,14 +893,14 @@
     width: 160px;
   }
 
-  .menu_button {
-    display: block;
-  }
-
   .menu-list {
     display: none;
   }
   
+  .menu_button {
+    display: block;
+  }
+
   .welcome-title {
     font-size: 40px;
     line-height: 1.4;
@@ -962,7 +961,7 @@
     content: "";
     display: block;
     height: 3px;
-    width: 100%;
+    max-width: 100%;
     background-color: #f3f7f6;
   }
   
@@ -986,7 +985,8 @@
   }
   
   .shop {
-    padding: 0 35px;
+    max-width: 700px;
+    padding: 0;
   }
   
   .shop-main-title {
@@ -1000,14 +1000,18 @@
   }
   
   .shop-posts {
+    box-sizing: content-box;
     flex-wrap: wrap;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .shop-item {
-    margin: 0 20px 50px;
+    width: 310px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .shop-title-link {
@@ -1023,7 +1027,11 @@
   }
   
   .footer {
-    padding: 20px 15px 40px;
+    padding: 0 15px 40px;
+  }
+
+  .social {
+    margin-bottom: 45px;
   }
   
   .popup-title {
@@ -1057,6 +1065,8 @@
   }
   
   .menu_button {
+    top: 35px;
+    right: 15px;
     display: block;
   }
   
@@ -1228,266 +1238,75 @@
   }
   
   .shop-item {
-    display: flex;
-    flex-direction: column;
-    margin: 0 22px 50px;
+    width: 280px;
+    margin: 0 20px 50px;
   }
   
   .shop-item-picture {
-    width: 100%;
     height: 280px;
-  }
-  
-  .shop-item-img {
-    width: 100%;
-  }
-  
-  .shop-content {
-    width: 100%;
-    outline-offset: 25px;
   }
   
   .shop-title-link {
     font-size: 17px;
     line-height: 1.3;
+    margin-top: 20px;
   }
   
   .shop-text {
     font-size: 15px;
     line-height: 1.5;
-    margin-top: 0;
     margin-bottom: 20px;
   }
   
   .footer {
-    max-width: 1200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 65px 15px 40px;
+    max-width: 640px;
+    padding: 15px 15px 45px;
   }
   
   .social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 74px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f4f7f6;
+    margin-bottom: 45px;
   }
-  
-  .social-list {
-    display: flex;
-    list-style-type: none;
-    padding: 30px 0;
-    align-items: center;
-  }
-  
-  .social-iconsocial-icon__twitter {
-    background-image: url(../svg/004-twitter.svg);
-    background-size: 23px;
-    background-position: center center;
-    display: block;
-    margin: 0 30px;
-    height: 23px;
-    width: 23px;
-  }
-  
-  .social-iconsocial-icon__pinterest {
-    background-image: url(../svg/001-pinterest.svg);
-    background-size: 23px;
-    background-position: center center;
-    display: block;
-    height: 23px;
-    width: 23px;
-  }
-  
-  .social-iconsocial-icon__facebook {
-    background-image: url(../svg/002-facebook-logo.svg);
-    background-size: 23px;
-    margin: 0 30px;
-    background-position: center center;
-    display: block;
-    height: 23px;
-    width: 23px;
-  }
-  
-  .social-iconsocial-icon__instagram {
-    background-image: url(../svg/005-instagram.svg);
-    background-size: 23px;
-    background-position: center center;
-    display: block;
-    height: 23px;
-    width: 23px;
-  }
-  
-  .social-iconsocial-icon__tumblr {
-    background-image: url(../svg/003-tumblr.svg);
-    background-size: 23px;
-    margin: 0 30px;
-    background-position: center center;
-    display: block;
-    height: 23px;
-    width: 23px;
-  }
-  
-  .сopyright {
-    display: flex;
-    font-family: OpenSans-Bold;
-    font-size: 12px;
-    color: #999999;
-    justify-content: center;
-  }
-  
-  .сopyright-link {
-    color: #999999;
-    text-decoration: none;
-  }
-  
-  .popup-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-  }
-  
+
   .popup-wrapper-hidden {
-    display: none;
+    display: flex;
   }
   
   .popup {
-    position: relative;
-    max-width: 390px;
-    padding: 55px 30px;
-    background: #ffffff;
-    margin: auto;
+    max-width: 330px;
+    padding: 25px 20px;
   }
   
   .popup-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 1;
-    font-family: OpenSans-Bold;
-    color: black;
+    font-size: 16px;
   }
   
   .popup-title::after {
     content: "";
-    display: block;
-    height: 3px;
-    width: 66px;
-    background-color: #b59f5b;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 15px;
-    margin-bottom: 25px;
-  }
-  
-  .form {
-    font-family: OpenSans-Regular;
-    font-size: 13px;
-    line-height: normal;
+    margin-top: 10px;
   }
   
   .form-row {
-    margin-bottom: 35px;
-  }
-  
-  .form-hint {
-    display: block;
+    margin-bottom: 30px;
   }
   
   .select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 50px;
-    width: 330px;
-    background-color: #f3f7f6;
-    border: none;
-    padding-left: 20px;
-    margin-top: 10px;
-    font-family: OpenSans-Regular;
-    font-size: 13px;
-    background-image: url(../svg/form-arrows.svg);
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-position: right 15px center;
+    width: 100%;
+    margin-top: 5px;
   }
   
   .radio-group {
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
-  .radio-group:nth-of-type(n + 2) {
-    margin-left: 15px;
-  }
-  
-  .radio {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-  }
-  
-  .radio:checked ~ .radio-group-text::before {
-    background-image: url(../svg/form-empty-circle.svg);
-  }
-  
-  .radio-group-text::before {
-    content: "";
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    background-image: url(../svg/form-circle.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 17px;
-    vertical-align: middle;
-    margin-right: 5px;
+    margin-top: 5px;
   }
   
   .textarea {
-    font-family: OpenSans-Regular;
-    font-size: 13px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #f3f7f6;
-    border: none;
-    padding: 20px;
-    margin-top: 10px;
-    width: 330px;
-    min-height: 135px;
-  }
-  
-  .button-submit {
-    font-family: OpenSans-Bold;
-    font-size: 14px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #b59f5b;
-    border: none;
+    margin-top: 5px;
     width: 100%;
-    height: 50px;
-    text-transform: uppercase;
-    color: white;
+    min-height: 130px;
   }
   
   .popup__close {
-    width: 20px;
-    height: 20px;
-  
-    position: absolute;
-    top: -25px;
-    right: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
-    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    top: -35px;
     }
   }
